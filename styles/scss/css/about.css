@@ -1,0 +1,37 @@
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 100px minmax(600px, 1fr);
+      grid-template-rows: 100px minmax(600px, 1fr);
+      grid-template-areas: "title title" "right-sidebar left-sidebar";
+}
+
+.about__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: blue;
+}
+
+.about__right-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: right-sidebar;
+  background-color: red;
+}
+
+.about__left-images {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: left-sidebar;
+  background-color: yellow;
+}
+/*# sourceMappingURL=about.css.map */

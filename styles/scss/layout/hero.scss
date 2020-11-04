@@ -1,0 +1,40 @@
+.hero {
+  height: calc(100vh - 96px);
+  background-image: url("../../images/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    background: rgba(0, 0, 0, 0.6);
+    height: 30%;
+    min-height: 211px;
+    width: 40%;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    &__text {
+      font-weight: $bold;
+      color: $white;
+      font-size: $font-lg;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    &__box {
+      &__text {
+        font-size: $font-md;
+        text-align: center;
+      }
+    }
+  }
+}

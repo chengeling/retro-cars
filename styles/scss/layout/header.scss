@@ -1,0 +1,95 @@
+.header {
+  height: 96px;
+  background-color: $navbar-grey;
+  color: $white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 2;
+
+  &__wrapper {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 46px;
+  }
+
+  &__logo-text {
+    font-family: "Poiret One", cursive;
+    font-size: $font-lg;
+    font-weight: $normal;
+    letter-spacing: 4px;
+  }
+
+  &__navigation {
+    height: 100%;
+    width: 80%;
+
+    &-hamburger {
+      display: none;
+      background: none;
+      border: none;
+    }
+  }
+
+  &__navigation-list {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__navigation-list__item-link {
+    font-size: $font-sm;
+    color: $white;
+    text-decoration: none;
+    position: relative;
+  }
+
+  &__navigation-list__item-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    background-color: $orange;
+  }
+
+  &__navigation-list__item-link:hover::after {
+    height: 2px;
+    width: 100%;
+  }
+}
+
+.header--sticky {
+  background-color: rgba(43, 43, 43, 0.6);
+  transition: 0.5s;
+}
+
+@media (max-width: 900px) {
+  .header {
+    &__wrapper {
+      width: 100%;
+    }
+
+    &__navigation {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &-hamburger {
+        display: block;
+        margin-right: 36px;
+      }
+      &-list {
+        display: none;
+      }
+    }
+  }
+}
