@@ -414,12 +414,6 @@
 }
 
 @media (max-width: 800px) {
-  .priorities__card:hover {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-transform: none;
-            transform: none;
-  }
   .priorities__card-wrapper {
     padding: 4px;
   }

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classic car renovation</title>
     <link rel="stylesheet" href="styles/css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script></script>
 </head>
 <body>
     <header class="header">
@@ -56,10 +58,10 @@
         </div>
     </section>
     <section class="about">
-        <h2 class="about__title">
+        <h2 class="about__title" data-aos="fade-down">
             Classic car renovation
         </h2>
-        <div class="about__left-text">
+        <div class="about__left-text" data-aos="fade-right">
             <h3 class="about__left-text__title">
                 Our goal is to restore or rebuild your car 
                 into their former glory either build 
@@ -86,7 +88,7 @@
                 </span>
             </blockquote>
         </div>
-        <div class="about__right-images">
+        <div class="about__right-images" data-aos="fade-left">
             <img src="images/about-first.jpg" alt="" class="about__right-images__first">
             <img src="images/about-second.jpg" alt="" class="about__right-images__second">
         </div>
@@ -96,7 +98,7 @@
             Our priorities
         </h2>
         <div class="priorities__card-wrapper">
-            <div class="priorities__card">
+            <div class="priorities__card" data-aos="flip-right">
                 <img src="images/priorities-eye.png" alt="" class="priorities__card-image">
                 <h3 class="priorities__card-title">Attention to detail</h3>
                 <p class="priorities__card-text">
@@ -105,7 +107,7 @@
                     exercitation ullamco
                 </p>
             </div>
-            <div class="priorities__card">
+            <div class="priorities__card" data-aos="flip-right">
                 <img src="images/priorities-user.png" alt="" class="priorities__card-image">
                 <h3 class="priorities__card-title">Client satisfaction</h3>
                 <p class="priorities__card-text">
@@ -114,7 +116,7 @@
                     exercitation ullamco
                 </p>
             </div>
-            <div class="priorities__card">
+            <div class="priorities__card" data-aos="flip-right">
                 <img src="images/priorities-pin.png" alt="" class="priorities__card-image">
                 <h3 class="priorities__card-title">Convenient location</h3>
                 <p class="priorities__card-text">
@@ -130,7 +132,7 @@
             Cars
         </h2>
         <div class="cars-wrapper">
-            <div class="cars-wrapper__card">
+            <div class="cars-wrapper__card" data-aos="zoom-in">
                 <div class="cars-wrapper__card-info">
                     <h3 class="car-wrapper__card-info__text">
                         Audi A4
@@ -139,7 +141,7 @@
                 <img class="cars-wrapper__card-image" src="images/car1.jpg" alt="">
             </div>
 
-            <div class="cars-wrapper__card">
+            <div class="cars-wrapper__card" data-aos="zoom-in">
                 <div class="cars-wrapper__card-info">
                     <h3 class="car-wrapper__card-info__text">
                         Audi A4
@@ -148,7 +150,7 @@
                 <img class="cars-wrapper__card-image" src="images/car2.jpg" alt="">
             </div>
 
-            <div class="cars-wrapper__card">
+            <div class="cars-wrapper__card" data-aos="zoom-in" >
                 <div class="cars-wrapper__card-info">
                     <h3 class="car-wrapper__card-info__text">
                         Audi A4
@@ -157,7 +159,7 @@
                 <img class="cars-wrapper__card-image" src="images/car3.jpg" alt="">
             </div>
 
-            <div class="cars-wrapper__card">
+            <div class="cars-wrapper__card" data-aos="zoom-in">
                 <div class="cars-wrapper__card-info">
                     <h3 class="car-wrapper__card-info__text">
                         Audi A4
@@ -166,7 +168,7 @@
                 <img class="cars-wrapper__card-image" src="images/car4.jpg" alt="">
             </div>
 
-            <div class="cars-wrapper__card">
+            <div class="cars-wrapper__card" data-aos="zoom-in">
                 <div class="cars-wrapper__card-info">
                     <h3 class="car-wrapper__card-info__text">
                         Audi A4
@@ -175,7 +177,7 @@
                 <img class="cars-wrapper__card-image" src="images/car5.jpg" alt="">
             </div>
 
-            <div class="cars-wrapper__card">
+            <div class="cars-wrapper__card" data-aos="zoom-in">
                 <div class="cars-wrapper__card-info">
                     <h3 class="car-wrapper__card-info__text">
                         Audi A4
@@ -184,7 +186,7 @@
                 <img class="cars-wrapper__card-image" src="images/car6.jpg" alt="">
             </div>
 
-            <div class="cars-wrapper__card">
+            <div class="cars-wrapper__card" data-aos="zoom-in">
                 <div class="cars-wrapper__card-info">
                     <h3 class="car-wrapper__card-info__text">
                         Audi A4
@@ -193,7 +195,7 @@
                 <img class="cars-wrapper__card-image" src="images/car7.jpg" alt="">
             </div>
 
-            <div class="cars-wrapper__card">
+            <div class="cars-wrapper__card" data-aos="zoom-in">
                 <div class="cars-wrapper__card-info">
                     <h3 class="car-wrapper__card-info__text">
                         Audi A4
@@ -201,7 +203,7 @@
                 </div>
                 <img class="cars-wrapper__card-image" src="images/car8.jpg" alt="">
             </div>
-            <div class="cars-wrapper__card">
+            <div class="cars-wrapper__card" data-aos="zoom-in">
                 <div class="cars-wrapper__card-info">
                     <h3 class="car-wrapper__card-info__text">
                         Audi A4
@@ -243,7 +245,14 @@
             </div>
         </div>
     </section>
-    <script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script >
+        AOS.init({
+            offset: 200,
+            duration: 600
+        });
+
         const header = document.querySelector('header');
         window.addEventListener('scroll', () => {
             if(window.scrollY > 0) {
@@ -253,5 +262,6 @@
             }
         });
     </script>
+
 </body>
 </html>
