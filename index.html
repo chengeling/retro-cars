@@ -6,6 +6,8 @@
     <title>Classic car renovation</title>
     <link rel="stylesheet" href="styles/css/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js" defer></script>
     <script></script>
 </head>
 <body>
@@ -98,32 +100,38 @@
             Our priorities
         </h2>
         <div class="priorities__card-wrapper">
-            <div class="priorities__card" data-aos="flip-right">
-                <img src="images/priorities-eye.png" alt="" class="priorities__card-image">
-                <h3 class="priorities__card-title">Attention to detail</h3>
-                <p class="priorities__card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco
-                </p>
+            <div class="card-wrapper" data-aos="flip-right">
+                <div class="priorities__card">
+                    <img src="images/priorities-eye.png" alt="" class="priorities__card-image">
+                    <h3 class="priorities__card-title">Attention to detail</h3>
+                    <p class="priorities__card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco
+                    </p>
+                </div>
             </div>
-            <div class="priorities__card" data-aos="flip-right">
-                <img src="images/priorities-user.png" alt="" class="priorities__card-image">
-                <h3 class="priorities__card-title">Client satisfaction</h3>
-                <p class="priorities__card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco
-                </p>
+            <div class="card-wrapper" data-aos="flip-right">
+                <div class="priorities__card">
+                    <img src="images/priorities-user.png" alt="" class="priorities__card-image">
+                    <h3 class="priorities__card-title">Client satisfaction</h3>
+                    <p class="priorities__card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco
+                    </p>
+                </div>
             </div>
-            <div class="priorities__card" data-aos="flip-right">
-                <img src="images/priorities-pin.png" alt="" class="priorities__card-image">
-                <h3 class="priorities__card-title">Convenient location</h3>
-                <p class="priorities__card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco
-                </p>
+            <div class="card-wrapper" data-aos="flip-right">
+                <div class="priorities__card" >
+                    <img src="images/priorities-pin.png" alt="" class="priorities__card-image">
+                    <h3 class="priorities__card-title">Convenient location</h3>
+                    <p class="priorities__card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -194,7 +202,6 @@
                 </div>
                 <img class="cars-wrapper__card-image" src="images/car7.jpg" alt="">
             </div>
-
             <div class="cars-wrapper__card" data-aos="zoom-in">
                 <div class="cars-wrapper__card-info">
                     <h3 class="car-wrapper__card-info__text">
@@ -245,23 +252,5 @@
             </div>
         </div>
     </section>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script >
-        AOS.init({
-            offset: 200,
-            duration: 600
-        });
-
-        const header = document.querySelector('header');
-        window.addEventListener('scroll', () => {
-            if(window.scrollY > 0) {
-                header.classList.add('header--sticky');
-            } else if (window.scrollY == 0) {
-                header.classList.remove('header--sticky');
-            }
-        });
-    </script>
-
 </body>
 </html>
