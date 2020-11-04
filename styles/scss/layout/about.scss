@@ -1,12 +1,13 @@
 .about {
   min-height: 76vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   grid-template-rows: 176px 1fr;
   grid-template-areas:
     "title title"
     "left-sidebar right-sidebar";
   margin: 26px;
+  padding-top: 12px;
 
   &__title {
     grid-area: title;
@@ -30,6 +31,7 @@
       font-size: $font-md;
       line-height: 28px;
       text-align: left;
+      margin: 32px 0;
     }
 
     &__para1,
@@ -37,6 +39,7 @@
       font-size: $font-sm;
       color: $grey;
       line-height: 32px;
+      margin: 24px 0;
     }
 
     &__quote {
@@ -108,7 +111,7 @@
 
     &__title {
       font-size: 30px;
-      margin-bottom: 28px;
+      margin-bottom: 38px 0;
     }
 
     &__left-text {
@@ -117,11 +120,12 @@
         font-weight: $normal;
         font-size: $font-nm;
         line-height: 28px;
-        margin-bottom: 24px;
       }
 
       &__quote {
         padding-left: 0;
+        margin-bottom: 32px;
+
         &-text {
           font-size: $font-sm;
         }
@@ -133,11 +137,12 @@
     }
 
     &__right-images {
-      width: 100vw;
+      padding: 0 34px;
+
       &__first,
       &__second {
         width: 100%;
-        max-width: 80vw;
+        max-width: 100%;
       }
 
       &__first {

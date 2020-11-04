@@ -1,3 +1,13 @@
+const hamburger = document.querySelector('.header__navigation-hamburger');
+const nav = document.querySelector('.header__navigation');
+
+const toggleClass = () => {
+    nav.classList.toggle('header__navigation--open')
+}
+
+hamburger.addEventListener('click', toggleClass)
+nav.addEventListener('click', toggleClass)
+
 AOS.init({
     offset: 200,
     duration: 600

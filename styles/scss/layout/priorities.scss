@@ -4,6 +4,7 @@
     font-weight: $normal;
     font-size: $font-lg;
     text-align: center;
+    margin: 48px;
   }
 
   &__card {
@@ -52,6 +53,11 @@
 }
 
 @media (max-width: 800px) {
+  .priorities__card:hover {
+    box-shadow: none;
+    transform: none;
+  }
+
   .priorities__card-wrapper {
     padding: 4px;
   }

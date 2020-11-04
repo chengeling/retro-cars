@@ -37,6 +37,15 @@
     }
   }
 
+  &__navigation--active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+  }
+
   &__navigation-list {
     height: 100%;
     list-style-type: none;

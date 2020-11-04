@@ -49,6 +49,15 @@
 
 @media (max-width: 800px) {
   .cars-wrapper {
-    padding: 0;
+    padding: 20px;
+
+    &__card-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25%;
+      background-color: rgba(0, 0, 0, 0.7);
+      opacity: 1;
+    }
   }
 }
