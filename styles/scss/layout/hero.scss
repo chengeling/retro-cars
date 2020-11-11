@@ -12,12 +12,12 @@
   &__box {
     background: rgba(0, 0, 0, 0.6);
     height: 30%;
-    min-height: 211px;
+    max-height: 200px;
     width: 40%;
     min-width: 300px;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 
     &__text {
       font-weight: $bold;
